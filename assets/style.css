@@ -1,0 +1,151 @@
+:root {
+    --base1:#0c1014;
+    --base2:#11151c;
+    --base3:#091f2e;
+    --base4:#0a3749;
+    --base5:#245361;
+    --base6:#599cab;
+    --base7:#99d1ce;
+    --base8:#d3ebe9;
+}
+
+@font-face {
+    font-family: tnfc;
+    src: url(tnfc.ttf);
+}
+
+* {
+    font-family: tnfc;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*background-color: var(--base3);
+    color: var(--base8);*/
+}
+
+body {
+    color: var(--base8);
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    color: var(--base6);
+    cursor: pointer;
+}
+
+nav {
+    text-align: center;
+}
+li {
+    text-decoration: none;
+    list-style-type: none
+}
+th, td {
+    padding: 8px;
+}
+
+p.blank {
+    text-align: center;
+    margin: 25%;
+}
+
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1 !important;
+}
+
+div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40rem;
+    min-height: 100vh;
+}
+
+div.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40rem;
+    min-height: 100vh;
+}
+
+div.box {
+    padding: 30px;
+    border: 2px solid var(--base7);
+    /*background-color: var(--base1);*/
+    background-color: rgba(12, 16, 20, 0.98);
+
+}
+
+div.pic {
+    border: 2px solid var(--base7);
+    border-right: 0px;
+    padding: 26px;
+    background-color: var(--base1);
+
+}
+
+div.hidden {
+    display: none;
+}
+
+.wb-body {
+    background-color: var(--base1) !important;
+    margin: 30px;
+}
+.wb-title, .wb-drag {
+    background-color: var(--base3);
+}
+.wb-e, .wb-w {
+    display: none;
+}
+.wb-min, .wb-max, .wb-full, .wb-close{
+    background-color: var(--base2);
+}
+.winbox {
+    background-color: var(--base6);
+}
+.wb{
+    background-color: #091f2e;
+}
+
+div#lines {
+    background-image: url("./lines.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    animation: line 0.8s infinite;
+    animation-timing-function: linear;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+@keyframes line {
+0% {
+    background-position: 0px 0px;
+}
+100% {
+    background-position: 0px 10px;
+}
+}
