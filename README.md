@@ -1,6 +1,6 @@
 # dms
 
-document management system
+a simple document management system using php
 
 start the xampp server
    
